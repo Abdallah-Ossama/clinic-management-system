@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css2/styles.css">
+    <title>Management system</title>
+</head>
+<body>
+        <section>
+            <div class="container">
+                <h2>Management system</h2>
+                <div class="card">
+                    <div class="inputs">
+                <div class="information">
+                    <input type="text" id="named" placeholder="Name">
+                    <input type="number" id="age" placeholder="age">
+                    <input type="text" id="area" placeholder="area">
+                </div>
+                <input type="number" id="price" placeholder="price">
+                <input type="number" id="numberPhone" placeholder="Phone number">
+                <input type="text" id="category" placeholder="category">
+                <input type="datetime-local" id="data" placeholder="Data">
+                <button id="create">Create</button>
+                <input onkeyup="searchData(this.value)" type="text" id="search" placeholder="Search">
+                        </div>
+
+                <div class="searchbtn">
+                    <button onclick=" getSearchMood(this.id)" id="searchByName">Search by name</button>
+                    <button onclick=" getSearchMood(this.id)" id="searchBycategory">Search by category </button>
+                </div>
+                            
+                <div class="outputs">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>ID</td>
+                                <td>name</td>
+                                <td>age</td>
+                                <td>area</td>
+                                <td>price</td>
+                                <td>phone number</td>
+                                <td>category</td>
+                                <td>data</td>
+                                <td>Updata</td>
+                                <td>Delete</td>
+                            </tr>
+                        </thead>
+                        
+                        <tbody id="tbody">
+                        </tbody>
+                    </table>
+                </div>
+                </div>
+            </div>
+
+            <div id="chatContainer">
+            </div>
+
+        </section>
+        <section>
+            <div class="chat-icon">
+                <img onclick="chatImg()" src="imgs/chat.png"> 
+            </div>   
+        </section>
+    <script src="js2/application.js"></script>
+</body>
+</html>
